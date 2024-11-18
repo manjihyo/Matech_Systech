@@ -63,6 +63,15 @@ label {
     margin-left: 40px;
     left: 60px;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #2D55B4;
+}
+
 textarea {
     color: rgb(50, 50, 50);
     font-family: 'sans-serif';

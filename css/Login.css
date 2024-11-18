@@ -28,12 +28,12 @@ body {
  
 }
 .navdiv{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    
-    right: 10px;
-    top: 15px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        
+        right: 10px;
+        top: 15px;
 }
 
 li{

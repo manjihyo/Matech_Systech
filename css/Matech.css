@@ -19,7 +19,11 @@
         padding: 20px;
         margin-top: 30px;
     }
-    
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
     li{
         width: 170px;
         
@@ -31,7 +35,7 @@
         cursor: pointer;
         
     }
-    li:hover{
+    a:hover{
         color: #2D55B4;
     }
 
