@@ -6,6 +6,7 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="/css/review.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
 </head>
 <body>
     <div id="rectangle-top"></div>
@@ -17,37 +18,35 @@
                 <li><a href="#"></a><i class="fa-regular fa-comment"></i>Messages</li>
                 <li><a href="#"></a><i class="fa-regular fa-file"></i>History</li>
                 <li><a href="#"></a><i class="fa-solid fa-gear"></i>Settings</li>
-                <li><a href="/Home.html"></a><i class="fa-solid fa-right-from-bracket"></i>Logout</li>
+                <li><a href="/Home.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
             </ul>
         </div>
     </div>
     <h1>Tickets</h1>
     <div id="rectangle-1">
-        <button type="submit" class="btn" onclick="openPopup()">Review</button>
         <div class="popup" id="popup">
             <div id="rectangle-2">Assign</div>
             <div id="rectangle-3"></div>
             <div id="rectangle-4"></div>
-            <button type="button" onclick="closePopup()">Assign</button>
         </div>
     </div>
+
+    <table class="list_review" id="employeeList">
+        <thead>
+            <tr>
+                <th>Profile</th>
+                <th>Title</th>
+                <th>Complaint</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+
+        </tbody>
+    </table>
     
-    <!-- The overlay that will blur the background -->
-    <div id="overlay" class="overlay"></div>
 
-    <script>
-        let popup = document.getElementById("popup");
-        let overlay = document.getElementById("overlay");
-
-        function openPopup() {
-            popup.classList.add('open-popup');
-            overlay.classList.add('open-overlay');
-        }
-
-        function closePopup() {
-            popup.classList.remove('open-popup');
-            overlay.classList.remove('open-overlay');
-        }
-    </script>
+    <script src="/JS/review.js"></script>
 </body>
 </html>

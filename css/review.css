@@ -194,3 +194,12 @@ ul li:nth-child(6){
     color: #313442;
     
   }
+
+  .list_review{
+    
+    position: absolute;
+    bottom: 300px;
+    z-index: 100;
+    left: 50%;
+      word-spacing: 50%;
+  }

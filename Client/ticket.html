@@ -6,11 +6,6 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="/css/ticket.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-    <style>
-        
-        
-    </style>
     
 </head>
 <body>
@@ -26,17 +21,41 @@
             </ul>
         </div>
     </div>
+
+
+
+
+    
     <div id="rectangle-2"></div>
     <h1>Ticket Request</h1>
+
     <div id="rectangle-1">
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit()"  autocomplete="off">
+                        <label>Ticket</label>
+                        <div class="title_box">
+                            <input type="text" name="ticket_title" id="ticket_title">
+                        </div> 
+
+                        <div class="ticket_head">
+                            <label>Ticket Body</label>
+                        </div>
+                            
+                            <div class="text_body">
+                                <input type="text" name="ticket_body" id="ticket_body">
+                            </div>
+
+                            <div class="form-action-buttons">
+                                <input type="submit" value="submit">
+                            </div>
+                    </form>
+                </td>
+            </tr>
+        </table>
         
-            <label for="multiLine">Title of Ticket</label>
-            <textarea placeholder="Title"></textarea>
-            <label for="multiLine">Ticket Body</label>
-            <div id="fake_textarea" placeholder="Write here..." contenteditable="true"></div>
-            
-        
-        <button onclick="location.href = 'home.hakob';">Submit</button> 
     </div>
+    <script src="/JS/ticket.js"></script>
 </body>
 </html>
